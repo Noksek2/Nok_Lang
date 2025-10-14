@@ -1,0 +1,12 @@
+# nok 1.0.0
+#<id>=<expr>
+#<id>:<type>=<expr>
+
+import std *
+i=0 #i:int=0
+f=1.f #f:float=1.f
+d=0.1 #d:double=0.1
+
+io.println('int : ' i)
+io.println('float : ' f)
+io.println('double : ' d)
