@@ -1,5 +1,7 @@
 # nok 1.0.0
 import std *
-s=String("Hello String") #s:String=String("Hello String")
-io.println(s)
-io.println('size' s.len)
+func main()
+  s=String("Hello String") #s:String=String("Hello String")
+  io.println(s)
+  io.println('size' s.len)
+end
