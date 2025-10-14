@@ -3,10 +3,33 @@
 #<id>:<type>=<expr>
 
 import std *
-i=0 #i:int=0
-f=1.f #f:float=1.f
-d=0.1 #d:double=0.1
 
-io.println('int : ' i)
-io.println('float : ' f)
-io.println('double : ' d)
+func main(arg)
+  #b:byte=0i8 or b:byte=0
+  #sh:short=0s or sh:short=0
+  #i:int=0
+  #l:long=1150L or l:long=1150
+  
+  
+  b=0_b
+  sh=0s
+  i=0
+  l=1150L 
+  
+  io.println('byte : ' b)
+  io.println('short : ' sh)
+  io.println('int : ' i)
+  io.println('long : ' l)
+  
+  #f:float=1.f
+  #d:double=0.1
+  
+  f=1.f 
+  d=0.1 
+  
+  io.println('float : ' f)
+  io.println('double : ' d)
+  
+  io.println('float : ' f)
+  io.println('double : ' d)
+end
