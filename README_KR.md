@@ -81,9 +81,12 @@ func main()
     if n==10
       io.print('어쩌고 저쩌고')
 end:func
+
+근데 생각해보니 }}} 이렇게 쓰면 되는거 아닌가?
 ```
 
 완벽하진 않아도 쉽게 축약이 됩니다. 파이썬 정도는 아니라도 비슷한 효과를 낼 수는 있죠<br>
+마음에 안 들면 님이 해보셈 <br>
 다른 방식도 있는데 굳이 설명 안하겠습니다. 궁금하면 예전에 만든 [ipari 스크립트](https://github.com/Noksek2/ipari-script) 참고
 
 - Python : 축약 O, 탭 독립성 X
