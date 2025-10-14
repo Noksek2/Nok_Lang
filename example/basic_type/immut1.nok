@@ -5,21 +5,30 @@
 import std *
 
 func main(arg)
-  #b:byte=0i8 or b:byte=0
-  #sh:short=0s or sh:short=0
+  #b:byte=0
+  #sh:short=0
   #i:int=0
-  #l:long=1150L or l:long=1150
+  #l:long=1150
   
-  
-  b=0_b
+  b=0b
   sh=0s
   i=0
-  l=1150L 
-  
+  l=1150L #doesn't matter upper case or lower case.
+
   io.println('byte : ' b)
   io.println('short : ' sh)
   io.println('int : ' i)
   io.println('long : ' l)
+
+  ub=0ub
+  ush=0us
+  ui=0u
+  ul=1150uL
+  
+  io.println('ubyte : ' ub)
+  io.println('ushort : ' ush)
+  io.println('uint : ' ui)
+  io.println('ulong : ' ul)
   
   #f:float=1.f
   #d:double=0.1
