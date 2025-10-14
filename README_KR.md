@@ -2,11 +2,12 @@
 이름은 닉네임 앞 글자 따서 만듦<br>여러번 갈아엎어서 구상하다가 포기하고 차근하게 아이디어 제대로 세우게 됨
 
 실제로 구현할거 같진 않고, 의사코드처럼 수 많은 언어를 공통적인 방법으로 표현하는 수단으로 쓸 지 생각중<br>
-구현체를 만드실 분이 있을리는 없으므로 ㅋㅠ<br>
+검증도 안된 언어 구현체를 만드실 분이 있을리는 없으므로 ㅋㅠ<br>
 재미삼아 봐주시면 감사드리겠습니다
 
 ## 참고 언어
-- **접해본 모든 언어 (C/C++ C# Java Kotlin Rust Go Delphi/Object Pascal Dart Javascript Typescript PHP Python Ruby Prolog Lua )** 
+- **접해본 모든 언어 (C/C++ C# Java Kotlin Rust Go Delphi/Object Pascal Dart Javascript Typescript PHP Python Ruby Prolog Lua )**
+- 단, 중점적으로는 C/C++, Python, Ruby, Rust 정도
 
 - 마이너하지만 Mojo Crystal도 참고
 - 학습용 페이지 [プログラミング言語を作ろう](https://kmaebashi.com/programmer/devlang/index.html)
