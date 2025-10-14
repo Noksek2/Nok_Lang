@@ -1,0 +1,19 @@
+#nok1.0.0
+import std*
+func main()
+  c1:char='b'
+  c2:char='c'
+  c3:char=100 #ascii code
+  c4=66c #char
+  
+  #warning overflow
+  c5:char=70000
+  
+  #error
+  #c1+c4
+  
+  s1:str='str1'
+  s2='str2'
+  s3="str3"
+
+end
