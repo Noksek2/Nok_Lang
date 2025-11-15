@@ -5,6 +5,9 @@
 검증도 안된 언어 구현체를 만드실 분이 있을리는 없으므로 ㅋㅠ<br>
 재미삼아 봐주시면 감사드리겠습니다
 
+컨셉은 범용 프로그래밍 언어지만, 도메인 특화 언어(또는 Godot처럼 자체 엔진에 쓰이는 방향)로 전향할 가능성 높음
+아니면 포기하던가
+
 # 버전 넘버링
 0.1.0 a1, a2, a3 ... 과 b1, b2... 는 서로 호환이 안 되는 문법임<br>
 즉, 문제가 생겼거나 문법을 바꾸는 경우 a->b, b->c로 바뀌며,<br>
@@ -14,7 +17,7 @@ a>b>c>...z>aa>ab>ac...>zz>aaa...
 
 
 ## 참고 언어
-- **접해본 모든 언어 (C/C++ C# Java Kotlin Rust Go Delphi/Object Pascal Dart Javascript Typescript PHP Python Ruby Prolog Lua )**
+- 접해본 언어들 (C/C++ C# Java Kotlin Rust Go Delphi/Object Pascal Dart Javascript Typescript PHP Python Ruby Prolog Lua )
 - 단, 중점적으로는 C/C++, Python, Ruby, Rust 정도
 
 - 마이너하지만 Mojo Crystal도 참고
