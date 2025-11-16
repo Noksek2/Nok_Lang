@@ -1,0 +1,15 @@
+/#{
+ It's a comment
+    /#{ Also Here
+        hihihi
+    }#/
+   BakaBaka
+}#/
+//This is line Comment
+//This Lang do not support /*
+
+//but you can use /* in #cpp block
+
+#cpp{
+  /* Hehehehehehehehe */
+}
