@@ -1,0 +1,7 @@
+//g:A1
+// #blocktype cpp
+fn main{
+  std.io.println(#"Hello World")
+  std.io.println(#"{}+{}={}",1,2,1+2)
+  std.io.println(#"{.3f}",10.34)
+}
