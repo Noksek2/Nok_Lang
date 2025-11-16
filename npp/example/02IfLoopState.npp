@@ -1,0 +1,18 @@
+//g:A1
+// #blocktype cpp
+fn main{
+  int number=std.io.getInt()
+  if number==10 {
+    std.io.println(#"{} == 10", number)
+  }
+  elif number==20 {
+    std.io.println(#"{} == 20", number)
+  }
+  else {
+    std.io.println(#"{} is not 10, 20", number)
+  }
+  while number>0 {
+    std.io.print(#"{} ", number)
+    number-=1
+  }
+}
