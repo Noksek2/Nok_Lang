@@ -1,0 +1,11 @@
+//useless break-statement
+
+fn main{
+  match std.in.getInt(){
+  10: std.io.print('first')
+  20: std.io.print('two')
+  else:
+    if(i==10)
+    elif(n==30)
+  }
+}
