@@ -1,0 +1,22 @@
+/#{
+  N++'s type system depends on Cpp. 
+  But binding is not so natural yet.
+  C lang binding is supportable nearly 100%
+
+  use @ keyword
+#}/
+
+#cpp{
+  #include <stdio.h>
+}
+
+pack stdio{
+  bind{
+    printf(const ptr<char>,...)=@printf
+  }
+}
+fn main{
+  stdio.printf("%d", 100)
+}
+
+//maybe useless :( 
