@@ -1,28 +1,18 @@
-# nok1.0.0
-# Nok lang use different style to initialize array type
-# use [int 5] instead of int[5]
-# It's much easier when you use tuple type
+# nok c1 
 import std*
 func main()  
-  #a:Array<int>=[1,2,3,4,5]
-  #a:Array<int,5>=[1,2,3,4,5]
-  #a:[int 5]=[1,2,3,4,5]
-  a=[1,2,3,4,5]
-
-  #arr_u:[uint 5]
-  arr_u=[1u,2u,3u,4u,5u]
-
-  #dynamic array
-  darr:[int *]=[10,20,30]
+  a:[int*10]=[1,2,3,4,5]
+  ~ dynamic array
+  darr:[int **]=[10,20,30]
 
   io.println(a 'len:' a.len)
   io.println(arr_u 'len:' arr_u.len)
   io.println(darr 'len:' darr.len)
-  
-  #compile error
+
+  ~ compile error
   #arr=[1u,2u,3] is type [uint uint int]? [uint 3]?
 
-  #same type
-  #[int int int] and [int 3]
-  #[int uint uint] and [int uint 2] and [int 1 uint 2]
+  ~ same type
+  ~ [int int int] and [int*3]
+  ~ [int uint uint] and [int uint*2] and [int*1 uint*2]
 end
