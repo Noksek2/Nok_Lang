@@ -1,19 +1,19 @@
-#nok1.0.0
+#nok c1
 import std*
-func main()
-  c1:char='b'
-  c2:char='c'
-  c3:char=100 #ascii code
-  c4=66c #char
-  
-  #warning overflow
+fn main()
+  ~ use ` for char literal instead of ' '
+  c1:char=`b
+  c2:char=`c
+  c3:char=100
+  c4=\x66
+
+  ~ error! overflow
   c5:char=70000
-  
-  #error
-  #c1+c4
-  
+
+  ~ `` for line
   s1:str='str1'
   s2='str2'
   s3="str3"
-
+  s4=``str4 
+  
 end
