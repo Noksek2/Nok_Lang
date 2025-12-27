@@ -99,13 +99,14 @@ LineComment:
 BlockComment:
     c++;
     if(*c=='\0')goto End;
-    if(*c!='}')goto BlockComment;
+    if(*c=='}')goto BlockCommentBrack;
+    goto BlockComment;
+BlockCommentBrack:
     c++;
-    if(*c!='#')goto BlockComment;
+    if(*c=='}')goto BlockCommentBrack;
     c++;
-    if(*c!='/')goto BlockComment;
-    c++;
-    goto Skip;
+    if(*c=='#'){c++; goto Skip;}
+    goto BlockComment;
 Number:
 /* 0(b[01]+|x[0-9a-fA-F]+|'.'[0-9]+)
 1-9 (0-9)*('.'[0-9]+)*/
