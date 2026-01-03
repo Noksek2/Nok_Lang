@@ -6,6 +6,6 @@ Because my english skill's poor, <br>...so I recomment to watch this document : 
 Just translate KR -> EN with LLM
 
 
-## N++ Lang
+## N++ Lang (suspend)
 C++ Transpiler<br>
 [NPP_README.md](NPP_README.md)<br>
