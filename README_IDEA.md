@@ -1,3 +1,16 @@
+
+# Grammar Design
+## Comment
+Nim : `#` and `#[ ]#`
+
+## Type name
+Rust/etc : type `i8`, `i16`...
+
+## Block style
+Ruby, lua : `end` (but not `do`, `then`)
+
+## 
+
 ```
 struct Rect
 	x:f32=0.

@@ -1,6 +1,6 @@
-# Nok lang (녹 언어) 0.1.0 c1 - 디자인 일지
+# Nok lang (녹 언어) 0.1.0 d1 - 디자인 일기(Design Diary)
 
-- 25/12/19 수정
+- 26/01/03 수정
 
 # 버전 넘버링
 0.1.0 a1, a2, a3 ... 과 b1, b2... 는 서로 호환이 안 되는 문법임<br>
@@ -11,12 +11,11 @@ a>b>c>...z>aa>ab>ac...>zz>aaa...
 
 
 ## 참고 언어
-- 접해본 언어들 (C/C++ C# Java Kotlin Rust Go Delphi/Object Pascal Dart Javascript Typescript PHP Python Ruby Prolog Lua )
-- 단, 중점적으로는 C/C++, Python, Ruby, Rust, Mojo Crystal도 참고
-- 학습용 페이지 [プログラミング言語を作ろう](https://kmaebashi.com/programmer/devlang/index.html)
+- 접해본 모든 언어 (대표적으로는 C/C++ Rust Lua Python Go)
+- 학습용 언어 [プログラミング言語を作ろう](https://kmaebashi.com/programmer/devlang/index.html)
 
-구현체는 C/C++
-현재는 VM 위에 작동하는 바이트코드 언어로 구현하려고 함.
+구현체는 C (또는 C++)
+레지스터 기반 바이트코드 VM입니다.
 
 ## 목표/철학
 뚜렷한 목표나 거창한건 없으며, 어느 언어를 대체한다는 목적도 아닙니다. 
@@ -29,7 +28,7 @@ a>b>c>...z>aa>ab>ac...>zz>aaa...
 - 제5원칙 **성능 하락**을 기피
 
 그에 따라
-- Garbage Collector 없음 (레퍼런스 카운팅 혹은 아레나 할당 지원 예정)
+- Garbage Collector 없음 (아레나 할당 / 메모리 풀을 이용한 방식을 고안 중)
 - 구문 분석 시 가능하면 귀찮은거 생략 (콤마, 세미콜론, 괄호 등)
 - 정적 타입 언어
 
@@ -54,12 +53,12 @@ a>b>c>...z>aa>ab>ac...>zz>aaa...
 - 자유도 및 편이성이 떨어짐. 파이썬처럼 탭 스페이스에 강박적인 경우
 
 ```
-~ 스타일 1
+# 스타일 1
 while true
-  ~ 내용
+  # 내용
 end
 
-~ 스타일 2
+# 스타일 2
 while true end
 ```
 
