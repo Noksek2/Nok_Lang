@@ -61,9 +61,68 @@ R1{
 	}
 }
 
+# python-like
+- R-out(현재 함수를 호출한 함수)
+- Rn 현재 스코프
+- Rn-1 Rn-2 ... Rn-m 바깥 스코프 (부모 스코프)
+- Rn+1 자식 스코프
+- R-in(현재 함수가 호출할 함수)
+
+R(var)=Rn # var의 지역은 Rn
+R(var2)=Rn+1 # var2의 지역은 Rn+1
+var -> var2 #var 소유권을 var2로 이동
+
+Obj(var) # var는 obj임
+!Obj(var) # var는 obj가 아님
+
+# 패턴 A1 - 외부(R-in)에서 객체 변경
+fn func(a){ --Obj(a)
+	a[2]=100 --
+}
+fn main(){
+	a=[1,2,3,4]
+	b=a
+	func(a)
+}
+
+# 패턴 A1.0 - 상황 추가
+fn func(a){ --Obj(a)
+	--R1
+	a[2]=100 
+	{--R2
+		b=[100] --
+		a[0]=b --
+	}
+}
+fn main(){
+	a=[1,2,3,4]
+	b=a
+	func(a)
+}
+
 ```
 - https://en.wikipedia.org/wiki/Region-based_memory_management
 
+# Explain, Search
+## parent가 죽어가는 child를 가질 필요는 있는가?
+```cpp
+void test() {
+    int* ptr_parent; // [Level 1]
+
+    {
+        int* ptr_child = pool_alloc(...); // [Level 2] 영역에 할당됨
+        
+        ptr_child = ptr_parent; // OK. (자식이 부모를 가리키는 건 안전함. 부모가 더 오래 사니까)
+        
+        ptr_parent = ptr_child; // ERROR! (부모가 자식을 가리킴)
+        // [Level 1] 변수에 [Level 2] 객체를 넣으려 함 -> 컴파일 에러 거부
+    } 
+    // 여기서 ptr_child 영역은 통째로 날아감(Bulk Free).
+    // 만약 위에서 에러를 안 냈다면 ptr_parent는 댕글링 포인터가 됨.
+}
+```
+- 아마 없을듯. R2에 child를 선언함 = child는 죽을 객체. parent가 child보다 오래 살아야 함.
+- 이거 세계관이 고약하다
 # Grammar Design
 ## Comment
 Nim : `#` and `#[ ]#`
