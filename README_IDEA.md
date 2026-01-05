@@ -1,3 +1,67 @@
+# noklang project Idea
+##  260106 Idea
+```
+# wtf
+fn to(type T=int|float)
+	if n==10 print(100)
+	end
+end 
+
+arr:[[int 2] 5]=[[1,2] [3,4] [5 6]] 
+
+arr2:&[int 2]=&arr
+;that
+arr2,ass | to(int, )(100)
+
+
+#[
+기초적인 판단 여부
+0. 
+1. obj
+1-0. obj 자체를 참조
+1-1. obj의 child를 참조
+1-1-0. obj의 child가 객체 아님
+1-1-0-1. obj의 child가 객체임
+2. 수명
+2-0. 같은 수명
+2-1. 다른 수명
+2-1-0. 스코프 
+2-1-0-0. 스코프 바깥을 참조
+2-1-0-1. 스코프 안을 참조
+2-1-1. 함수
+]#
+
+#[참조1-1 : 객체 아님, 같은 수명일경우]#
+i=1010
+i_ref:&int=&i
+i_ref=&i
+
+#[참조1-2 : 객체, 같은 수명]#
+i=[1 2 3 4]
+
+
+#[참조1-3 : 객체, 다른 수명이나 스코프]#
+
+
+
+arr:int[2][5]
+arr2:int[2]
+
+arr
+
+region 
+
+R1{
+	heap A1
+	stack B1
+	R2{
+		heap A2
+		stack B2
+		ret(R1) A2
+	}
+}
+
+```
 
 # Grammar Design
 ## Comment
